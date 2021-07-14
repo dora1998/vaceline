@@ -1,0 +1,18 @@
+'use strict'
+
+Object.defineProperty(exports, '__esModule', {
+  value: true,
+})
+exports.gray = exports.red = void 0
+const chalk = // FIXME: remove undefined handling after server-side is also built by webpack
+  typeof BUILD_PLATFORM !== 'undefined' && BUILD_PLATFORM === 'browser'
+    ? {}
+    : require('chalk')
+
+const emptyChalk = (s) => s
+
+const red = chalk ? chalk.redBright.bold : emptyChalk
+exports.red = red
+const gray = chalk ? chalk.gray : emptyChalk
+exports.gray = gray
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy91dGlscy9jaGFsay50cyJdLCJuYW1lcyI6WyJjaGFsayIsIkJVSUxEX1BMQVRGT1JNIiwicmVxdWlyZSIsImVtcHR5Q2hhbGsiLCJzIiwicmVkIiwicmVkQnJpZ2h0IiwiYm9sZCIsImdyYXkiXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBLE1BQU1BLEtBQXFDLEdBQ3pDO0FBQ0EsT0FBT0MsY0FBUCxLQUEwQixXQUExQixJQUF5Q0EsY0FBYyxLQUFLLFNBQTVELEdBQ0ksRUFESixHQUVJQyxPQUFPLENBQUMsT0FBRCxDQUpiOztBQU1BLE1BQU1DLFVBQVUsR0FBSUMsQ0FBRCxJQUFlQSxDQUFsQzs7QUFFTyxNQUFNQyxHQUFHLEdBQUdMLEtBQUssR0FBR0EsS0FBSyxDQUFDTSxTQUFOLENBQWdCQyxJQUFuQixHQUEwQkosVUFBM0M7O0FBQ0EsTUFBTUssSUFBSSxHQUFHUixLQUFLLEdBQUdBLEtBQUssQ0FBQ1EsSUFBVCxHQUFnQkwsVUFBbEMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBjaGFsazogdHlwZW9mIGltcG9ydCgnY2hhbGsnKS5kZWZhdWx0ID1cbiAgLy8gRklYTUU6IHJlbW92ZSB1bmRlZmluZWQgaGFuZGxpbmcgYWZ0ZXIgc2VydmVyLXNpZGUgaXMgYWxzbyBidWlsdCBieSB3ZWJwYWNrXG4gIHR5cGVvZiBCVUlMRF9QTEFURk9STSAhPT0gJ3VuZGVmaW5lZCcgJiYgQlVJTERfUExBVEZPUk0gPT09ICdicm93c2VyJ1xuICAgID8ge31cbiAgICA6IHJlcXVpcmUoJ2NoYWxrJylcblxuY29uc3QgZW1wdHlDaGFsayA9IChzOiBzdHJpbmcpID0+IHNcblxuZXhwb3J0IGNvbnN0IHJlZCA9IGNoYWxrID8gY2hhbGsucmVkQnJpZ2h0LmJvbGQgOiBlbXB0eUNoYWxrXG5leHBvcnQgY29uc3QgZ3JheSA9IGNoYWxrID8gY2hhbGsuZ3JheSA6IGVtcHR5Q2hhbGtcbiJdfQ==

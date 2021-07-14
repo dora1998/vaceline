@@ -1,0 +1,19 @@
+'use strict'
+
+Object.defineProperty(exports, '__esModule', {
+  value: true,
+})
+exports.isToken = isToken
+
+function isToken(token, type, value) {
+  return (
+    !!token &&
+    token.type === type &&
+    (value !== undefined
+      ? value instanceof RegExp
+        ? value.test(token.value)
+        : token.value === value
+      : true)
+  )
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy91dGlscy90b2tlbi50cyJdLCJuYW1lcyI6WyJpc1Rva2VuIiwidG9rZW4iLCJ0eXBlIiwidmFsdWUiLCJ1bmRlZmluZWQiLCJSZWdFeHAiLCJ0ZXN0Il0sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBRU8sU0FBU0EsT0FBVCxDQUlMQyxLQUpLLEVBS0xDLElBTEssRUFNTEMsS0FOSyxFQU9rQjtBQUN2QixTQUNFLENBQUMsQ0FBQ0YsS0FBRixJQUNBQSxLQUFLLENBQUNDLElBQU4sS0FBZUEsSUFEZixLQUVDQyxLQUFLLEtBQUtDLFNBQVYsR0FDR0QsS0FBSyxZQUFZRSxNQUFqQixHQUNFRixLQUFLLENBQUNHLElBQU4sQ0FBV0wsS0FBSyxDQUFDRSxLQUFqQixDQURGLEdBRUVGLEtBQUssQ0FBQ0UsS0FBTixLQUFnQkEsS0FIckIsR0FJRyxJQU5KLENBREY7QUFTRCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFRva2VuLCBUb2tlblR5cGUgfSBmcm9tICcuLi9wYXJzZXIvdG9rZW5pemVyJ1xuXG5leHBvcnQgZnVuY3Rpb24gaXNUb2tlbjxcbiAgVHlwZSBleHRlbmRzIFRva2VuVHlwZSxcbiAgUmVmaW5lZFRva2VuIGV4dGVuZHMgVG9rZW4gJiB7IHR5cGU6IFR5cGU7IHZhbHVlOiBzdHJpbmcgfVxuPihcbiAgdG9rZW46IFRva2VuIHwgdW5kZWZpbmVkLFxuICB0eXBlOiBUeXBlLFxuICB2YWx1ZT86IHN0cmluZyB8IFJlZ0V4cFxuKTogdG9rZW4gaXMgUmVmaW5lZFRva2VuIHtcbiAgcmV0dXJuIChcbiAgICAhIXRva2VuICYmXG4gICAgdG9rZW4udHlwZSA9PT0gdHlwZSAmJlxuICAgICh2YWx1ZSAhPT0gdW5kZWZpbmVkXG4gICAgICA/IHZhbHVlIGluc3RhbmNlb2YgUmVnRXhwXG4gICAgICAgID8gdmFsdWUudGVzdCh0b2tlbi52YWx1ZSlcbiAgICAgICAgOiB0b2tlbi52YWx1ZSA9PT0gdmFsdWVcbiAgICAgIDogdHJ1ZSlcbiAgKVxufVxuIl19
